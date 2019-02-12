@@ -1,0 +1,9 @@
+{
+  "jwtPrivateKey": "1234",
+  "db": {
+    "uri": "mongodb://localhost/fearSetting_tests",
+    "options": {
+      "useNewUrlParser": true
+    }
+  }
+}
