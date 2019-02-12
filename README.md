@@ -14,3 +14,5 @@ After cloning,
 7) in new terminal tab, run npm test
 
 Everything should be up and running at that point.
+
+To detatch from repository run 'rm -rf .git' in terminal. Verify by running 'git status'
