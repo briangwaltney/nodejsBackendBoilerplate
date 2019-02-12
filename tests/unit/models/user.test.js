@@ -12,10 +12,6 @@ describe('User class', () => {
         name_last: 'lastName',
         email: 'email@gmail.com',
         password: 'password',
-        height: 1,
-        weight: 1,
-        age: 1,
-        gender: 'male'
       }
     })
 
@@ -40,13 +36,9 @@ describe('User class', () => {
         'password',
         'creation_date',
         'role',
-        'height',
-        'weight',
-        'age',
-        'gender'
-
       ]))
     })
+
     it('should throw error if Joi validation fails', () => {
       initProps = {};
       const validation = validate(initProps);

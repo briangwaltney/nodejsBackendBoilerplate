@@ -21,10 +21,6 @@ describe('/api/users', () => {
         name_last: 'lastName',
         email: 'email@gmail.com',
         password: 'password',
-        height: 1,
-        weight: 1,
-        age: 1,
-        gender: 'male'
       });
       await user.save();
       role = 'admin';
@@ -82,10 +78,6 @@ describe('/api/users', () => {
         name_last: 'lastName',
         email: 'email@gmail.com',
         password: 'password',
-        height: 1,
-        weight: 1,
-        age: 1,
-        gender: 'male'
       });
       await user.save();
       id = user._id;
@@ -150,10 +142,6 @@ describe('/api/users', () => {
         name_first: 'firstName',
         email: 'email@email.com',
         password: 'password',
-        gender: 'male',
-        age: '1',
-        height: '1',
-        weight: '1'
       }
     })
 

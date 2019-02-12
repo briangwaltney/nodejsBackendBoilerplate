@@ -1,7 +1,7 @@
 {
   "jwtPrivateKey": "1234",
   "db": {
-    "uri": "mongodb://localhost/fearSetting_tests",
+    "uri": "mongodb://localhost/testBoiler_tests",
     "options": {
       "useNewUrlParser": true
     }

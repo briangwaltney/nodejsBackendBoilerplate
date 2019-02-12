@@ -33,7 +33,7 @@ const userSchema = new mongoose.Schema({
   },
   role: {
     type: String,
-    enum: ['user', 'coach', 'admin'],
+    enum: ['user', 'admin'],
     required: true,
     default: 'user',
     minLength: 3,
@@ -44,23 +44,7 @@ const userSchema = new mongoose.Schema({
     default: Date.now(),
     required: true
   },
-  height: {
-    type: Number,
-    maxlength: 4
-  },
-  weight: {
-    type: Number,
-    maxlength: 4
-  },
-  age: {
-    type: Number,
-    maxlength: 3
-  },
-  gender: {
-    type: String,
-    minlength: 4,
-    maxlength: 6
-  }
+
 })
 
 userSchema.methods.generateAuthToken = function () { //cannot use arrow function with "this"
@@ -79,11 +63,7 @@ function validateUser(user) {
     email: Joi.string().min(5).max(255).email().required(),
     password: Joi.string().min(8).max(255).required(),
     creation_date: Joi.date(),
-    gender: Joi.string().min(4).max(5),
-    age: Joi.number().max(3),
-    weight: Joi.number().max(3),
     role: Joi.string().max(55),
-    height: Joi.number().max(3),
   };
   return Joi.validate(user, schema);
 }
