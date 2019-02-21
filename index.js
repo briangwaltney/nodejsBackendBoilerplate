@@ -1,7 +1,7 @@
 //Boiler Plate
 
 //Dependencies and Setup
-require('dotenv').config();
+require('dotenv').config(); //uses .env to get variables
 const express = require('express');
 const app = express();
 const winston = require('winston');
