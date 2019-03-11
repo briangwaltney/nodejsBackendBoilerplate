@@ -29,6 +29,7 @@ router.post('/', validateBody(validate), async (req, res) => {
   let token = await user.generateAuthToken();
   return res
     .header('x-auth-token', token)
+    .header('access-control-expose-headers', 'x-auth-token')
     .send(_.pick(user, [
       '_id',
       'name_last',
