@@ -21,7 +21,7 @@
     "joi-objectid": "^2.0.0",
     "jsonwebtoken": "^8.4.0",
     "lodash": "^4.17.11",
-    "mongoose": "^5.4.10",
+    "mongoose": "^5.7.5",
     "winston": "^3.2.1",
     "winston-mongodb": "^4.0.3"
   },
